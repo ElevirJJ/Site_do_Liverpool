@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="./imgs/e4c21c2b95490c0217e68040b85d70b5.png">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="./imgs/reds/Liverpool-Logo-Final-1.png" alt="img" height="150">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Cadastre-se</a></li>
+                    <li><a href="">Saiba mais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="titulo" id="form-title">
+                <h2>Cadastre-se</h2>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Nome</label>
+                    <input type="text" id="username"  />
+                    <i><img class="success" src="./imgs/success-icon.svg"  height="18"></i>
+                    <i><img class="erro" src="./imgs/error-icon.svg"  height="18"></i>
+                    <small>Erro</small>
+                </div>
+                <div class="form-control">
+                    <label for="surname">Sobrenome</label>
+                    <input type="text" id="surname" />
+                    <i><img class="success" src="./imgs/success-icon.svg" height="18"></i>
+                    <i><img class="erro" src="./imgs/error-icon.svg"  height="18"></i>
+                    <small>Erro</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" />
+                    <i><img class="success" src="./imgs/success-icon.svg"  height="18"></i>
+                    <i><img class="erro" src="./imgs/error-icon.svg" height="18"></i>
+                    <small>Erro</small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" />
+                    <i><img class="success" src="./imgs/success-icon.svg" height="18"></i>
+                    <i><img class="erro" src="./imgs/error-icon.svg" height="18"></i>
+                    <small>Erro</small>
+                </div>
+                <div class="form-control">
+                    <label for="passwordconfirm">Confirme sua Senha</label>
+                    <input type="password" id="passwordconfirm" />
+                    <i><img class="success" src="./imgs/success-icon.svg"  height="18"></i>
+                    <i><img class="erro" src="./imgs/error-icon.svg" height="18"></i>
+                    <small>Erro</small>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="messagem" id="success-message">
+            <h1>Usuário cadastrado com sucesso!</h1>
+            <p>Confirme seu cadastro indo até seu email</p>
+        </div>
+        <button class="button" id="redirect-button" onclick="volta()">Voltar</button>
+    </section>
+</body>
+ <script src="./index.js"></script>
+
+</html>
